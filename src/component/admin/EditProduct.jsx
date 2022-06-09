@@ -1,27 +1,27 @@
 import axios from 'axios';
-import React, {  useLayoutEffect, useState } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { useStore } from '../../context/store.provider';
-
+import './EditProduct.css'
 function EditProduct(props) {
 
   const params = useParams()
-  const { storeProducts} = useStore()
+  const { storeProducts } = useStore()
   // const [productNameValue, setProductNameValue] = useState('')
   // const [categoryValue, setCategoryValue] = useState('')
   // const [imgUrlValue, setImgUrlValue] = useState('')
   // const [priceValue, setPriceValue] = useState('')
   const [product, setProduct] = useState({
     productName: "",
-    category:"",
+    category: "",
     imgUrl: "",
-    price:""
+    price: ""
   })
 
   useLayoutEffect(() => {
     const prod = storeProducts.find(p => p.id === params.id * 1)
     setProduct(prod)
-  },[])
+  }, [])
   const onChangeName = ({ target: { value } }) => {
     setProduct(prev => ({ ...prev, productName: value }))
   }
@@ -48,15 +48,17 @@ function EditProduct(props) {
     }
     axios.put('https://cors-anywhere.herokuapp.com/https://apimocha.com/efy1324/store/' + product.id, NewProduct)
   }
-console.log(product);
+  console.log(product);
   return (
-    <div className='edit-product-form'>
-      EditProduct {params.id}
-      <input onChange={onChangeName} value={product.productName}  />
-      <input onChange={onChangeCategory} value={product.category}  />
-      <input onChange={onChangeImg} value={product.imgUrl} />
-      <input onChange={onChangePrice} value={product.price}/>
-      <button onClick={sendProduct}>Edit product</button>
+    <div className='edit-product-edit'>
+      <div className='edit-product-form'>
+        <h2>EditProduct {params.id}</h2>
+        <input onChange={onChangeName} value={product.productName} />
+        <input onChange={onChangeCategory} value={product.category} />
+        <input onChange={onChangeImg} value={product.imgUrl} />
+        <input onChange={onChangePrice} value={product.price} />
+        <button className='edit-btn-edit' onClick={sendProduct}>Edit product</button>
+      </div>
     </div>
   )
 }

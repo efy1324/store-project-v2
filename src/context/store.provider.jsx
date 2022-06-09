@@ -34,6 +34,22 @@ export const StoreProvider = ({ children }) => {
       productName: 'פלטת שבת 4 סירים',
       productAmount: '1',
     },
+    {
+      id: '',
+      category: 'מוצרי חשמל',
+      imgUrl: 'כלבו אפרת',
+      price: '120',
+      productName: 'מטען נייד 30 אמפר',
+      productAmount: '1',
+    },
+    {
+      id: '',
+      category: 'מוצרי חשמל',
+      imgUrl: 'כלבו אפרת',
+      price: '100',
+      productName: 'מטען נייד 20 אמפר',
+      productAmount: '1',
+    },
   ]);
   const [clients, setClients] = useState([
     {
