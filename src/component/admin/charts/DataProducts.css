@@ -1,0 +1,13 @@
+.bar-chart-container-product{
+  width: 800px;
+}
+.pie-chart-container-product{
+  width: 600px;
+}
+.line-chart-container-product{
+  width: 800px;
+}
+.pies-container{
+  display: flex;
+  width: 100%;
+}

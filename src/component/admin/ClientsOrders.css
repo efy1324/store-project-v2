@@ -1,0 +1,90 @@
+.clients-orders {
+  width: 100%;
+  /* height: 98vh; */
+  display: flex;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* background-color: rgb(32, 3, 3); */
+  justify-content: center;
+  align-items: center;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* background-color: rgb(32, 3, 3); */
+  background: linear-gradient(45deg, rgb(86, 16, 74), transparent);
+
+}
+
+.client-card {
+  background: #aa4b6b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+
+}
+
+.client-details-card {
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+}
+
+.client-details-card div {
+  padding: 5px;
+  color: #d1ffff;
+}
+
+.client-order-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 45%;
+}
+
+.client-order-details div {
+  /* color: blue; */
+}
+
+.btn-order-clients {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-order-clients {
+  width: 204px;
+  height: 40px;
+  margin: 0px 8px;
+  padding: 4px 24px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 2px inset;
+  font-size: 12px;
+  cursor: pointer;
+  transition-property: color;
+  transition-property: background-color;
+  transition: 0.3s;
+  font-family: var(--font-family);
+  background-color: white;
+  border-radius: 20px;
+  border: 3px solid black;
+  cursor: pointer;
+  padding: 10px;
+  transition-property: color;
+  transition-property: background-color;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-order-clients:hover {
+  background-color: black;
+  color: white;
+}
+
+.form-client {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}

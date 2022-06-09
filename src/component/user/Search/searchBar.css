@@ -1,0 +1,15 @@
+.search-bar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  color: #000000
+}
+
+.search-bar input {
+  width: 280px;
+ 
+}
+/* .search{
+padding: 3px;
+} */

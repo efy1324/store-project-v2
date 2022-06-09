@@ -1,0 +1,7 @@
+.products-con {
+  width: 100%;
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  background-color: rgb(197, 186, 207);
+  grid-gap: 5px;
+}
